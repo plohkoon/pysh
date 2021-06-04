@@ -33,14 +33,14 @@ loader.exec_module(config)
 def init():
     global PATH
     global PROMPT
-
+    # Configure and clean PATH
     PATH = getattr(config, 'PATH', default_config.PATH)
     if isinstance(PATH, str):
         PATH = PATH.split(':')
     elif not isinstance(PATH, list):
         print("path malformed, using default")
         PATH = default_config.PATH
-
+    # Get PROMPT
     PROMPT = getattr(config, 'PROMPT', default_config.PROMPT)
 
 
