@@ -7,3 +7,5 @@ PATH = [
     "/sbin",
     "/bin"
 ]
+
+PROMPT = "#> "
